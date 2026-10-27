@@ -1,12 +1,13 @@
 name: Scrape Talk Locations
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'talks/**'
       - '_talks/**'
       - 'talkmap.ipynb'
-
+      
 jobs:
   build:
     runs-on: ubuntu-latest
